@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>音觅-Musical Banquet</title>
+		<link rel="shortcut icon" href="img/ymico.ico"/>
+		<link rel="stylesheet" type="text/css" href="css/new_file.css"/>
+		<script src="js/jquery-3.3.1.js"></script>
+		<script src="js/new_file.js"></script>
+		<script src="js/my_jquery.js"></script>
+		
+	</head>
+	<body id="top">
+	<!--LOGO部分开始-->
+	
+	<div id="bgd">
+		<div id="head">
+		<div class="left">
+			<a href="index.html"><img src="img/yinmi.jpg"/></a>
+		</div>
+		<div class="right">
+			<div class="user">
+				<input type="text" id="ssk" class="color" value="搜索..." style="height: 25px;border-radius:6px;border: none;padding-left: 5px;" onfocus="ssChange_0()" onblur="ssChange_1()"/>
+			        <a class="father" href="log.html" target="_blank">&nbsp;&nbsp;登录▼
+			        </a>
+			</div>		
+		</div>
+	</div>
+	</div>
+	<!--LOGO部分结束-->
+		<!--导航部分开始-->
+		<div id="nav">
+			<ul class="nav_1">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">每日推荐</a></li>
+				<li><a href="#">歌曲排行</a></li>
+				<li><a href="#">小众精选</a></li>
+				<li><a href="#">歌手</a></li>
+				<li><a href="#">关于我们</a></li>
+			</ul>
+		</div>
+        <!--导航部分结束-->
+        
+        <!--banner模块开始-->
+        <div id="banner" onload="hotchange()">
+        	<div class="banner_1">
+        		<ul class="banner_pic" id="banner_pic">
+        			<li class="current"><a href="#"><img src="img/1.jpg" class="one"/></a></li>
+        			<li class="pic"><a href="#"><img src="img/2.jpg"  class="one"/></a></li>
+        			<li class="pic"><a href="#"><img src="img/3.jpg"  class="one"/></a></li>
+        			<li class="pic"><a href="#"><img src="img/4.png"  class="one"/></a></li>
+        			<li class="pic"><a href="#"><img src="img/5.jpg"  class="one"/></a></li>
+        			<li class="pic"><a href="#"><img src="img/6.png"  class="one"/></a></li>
+        		</ul>
+        		<ul class="button" id="button">
+        			<li class="current" id="a1"></li>
+        			<li class="but" id="a2"></li>
+        			<li class="but" id="a3"></li>
+        			<li class="but" id="a4"></li>
+        			<li class="but" id="a5"></li>
+        			<li class="but" id="a6"></li>
+        		</ul>
+        	</div>
+        </div>
+        <!--banner模块结束-->
+                         <!--返回顶部小插件-->
+                         <a href="#top" class="goto_top"><img src="img/top.png" /></a>  
+                         <!--返回顶部小插件-->
+        <!--内容部分开始-->
+        <div id="centerbg">
+            <div id="commend">
+            	<!--本站推荐部分开始-->
+            	<div class="CM1" onmouseover="change_CM1p()" onmouseout="change_CM10()">
+            		<div class="CM1_0">
+            			<img src="img/test0_0.png" id="bztj"/>
+            			<p>音乐专栏</p>
+            			<hr color="#C10D0C"/>
+            		</div>
+            		
+            		<div class="CM1_1" onmouseover="fuxian_0()" onmouseout="xiaoshi_0()">
+            			<a href="#">
+            			<div class="fx_0" id="fx">
+            				<p>女神异闻录</p>
+				            <p>☞单击前往专栏☜</p>
+			            </div></a>
+            		</div>
+            		
+            		<div class="CM1_2" onmouseover="fuxian_1()" onmouseout="xiaoshi_1()">
+            			<a href="#">
+            			<div class="fx_1" id="fx">
+            				<p>摇滚Rock'n'roll</p>
+				            <p>☞单击前往专栏☜</p>
+			            </div>
+			            </a>
+            		</div>
+            		
+            		<div class="CM1_3" onmouseover="fuxian_2()" onmouseout="xiaoshi_2()">
+            			<a href="#">
+            				<div class="fx_2" id="fx">
+            				<p>爱慕</p>
+				            <p>☞单击前往专栏☜</p>
+			            </div></a>
+            		</div>
+            		
+            	</div>
+            	<!--本站推荐部分结束-->
+                <!--每日推荐部分开始-->
+                <div class="CM2" onmouseover="change_CM2p()" onmouseout="change_CM20()">
+                	<div class="CM2_0">
+            			<img id="mrtj" src="img/test1_0.png" />
+            			<p>每日推荐</p><a href="#">更多>></a>
+            			<hr color="#C10D0C"/>
+            		</div>
+            		<div class="CM2_1">
+            			<dl class="mr_song">
+            				<dt class="song_pic"><img src="img/song1.jpg" /></dt>
+            				<dd class="song_name">Society</dd>
+            				<dd class="song_singer">Eddie Vedder</dd>
+            			</dl>
+            			
+            			<dl class="mr_song">
+            				<dt class="song_pic"><img src="img/song2.jpg" /></dt>
+            				<dd class="song_name">Brother</dd>
+            				<dd class="song_singer">Kodaline</dd>
+            			</dl>
+            			
+            			<dl class="mr_song">
+            				<dt class="song_pic"><img src="img/song3.jpg" /></dt>
+            				<dd class="song_name">海阔天空</dd>
+            				<dd class="song_singer">Beyond</dd>
+            			</dl>
+            			
+            			<dl class="mr_song">
+            				<dt class="song_pic"><img src="img/song4.jpg" /></dt>
+            				<dd class="song_name">Tummy</dd>
+            				<dd class="song_singer">RADWIMPS</dd>
+            			</dl>
+            			
+            			<dl class="mr_song">
+            				<dt class="song_pic"><img src="img/song5.jpg" /></dt>
+            				<dd class="song_name">Lyn</dd>
+            				<dd class="song_singer">GROOVY</dd>
+            			</dl>
+            			
+            			<dl class="mr_song">
+            				<dt class="song_pic"><img src="img/song6.jpg" /></dt>
+            				<dd class="song_name">盛夏的舞</dd>
+            				<dd class="song_singer">Heyo_Official</dd>
+            			</dl>           			
+            		</div>
+                </div>             
+        	    <!--每日推荐部分结束-->
+        	    
+        	    <!--<歌曲排行部分开始>-->
+        	    <div class="CM3" onmouseover="Change_CM3()" onmouseout="Change_CM30()">
+        	    	<div class="CM3_0">
+        	    		<img id="gqph" src="img/test2_0.png" />
+            			<p>歌曲排行</p><a href="#">更多>></a>
+            			<hr color="#C10D0C"/>
+        	    	</div>
+        	    	
+        	    	<div class="CM3_1">
+        	    		<dl class="ph">
+        	    			<dt class="dt1">新歌榜</dt>
+        	    			<dd><p><span>&nbsp;1</span> 多想在平庸的生活拥抱你</p></dd>
+        	    			<dd><p><span>&nbsp;2</span> 路过人间</p></dd>
+        	    			<dd><p><span>&nbsp;3</span> 胆小鬼</p></dd>
+        	    			<dd><p><font color="#666">&nbsp;4</font> 别让我走远</p></dd>
+        	    			<dd><p><font color="#666">&nbsp;5</font> Kills You Slowly</p></dd>
+        	    			<dd><p><font color="#666">&nbsp;6</font> 形容</p></dd>
+        	    			<dd><p><font color="#666">&nbsp;7</font> 我愿意平凡的陪在你身旁</p></dd>
+        	    			<dd><p><font color="#666">&nbsp;8</font> 去见你</p></dd>
+        	    			<dd><p><font color="#666">&nbsp;9</font> 桥下</p></dd>
+        	    			<dd><p><font color="#666">10</font> 今天也想见到你</p></dd>
+        	    			<dd><a href="#">查看更多>></a></dd>
+        	    		</dl>
+        	    		
+        	    		<dl class="ph">
+        	    			<dt class="dt2">飙升榜</dt>
+        	    			<dd><p><span>&nbsp;1</span> 绿色</p></dd>
+        	    			<dd><p><span>&nbsp;2</span> 氧气舱</p></dd>
+        	    			<dd><p><span>&nbsp;3</span> 出山</p></dd>
+        	    			<dd><p><font color="#666">&nbsp;4</font> 路过人间</p></dd>
+        	    			<dd><p><font color="#666">&nbsp;5</font> 亦是此间少年</p></dd>
+        	    			<dd><p><font color="#666">&nbsp;6</font> 关于孤独我想说的话</p></dd>
+        	    			<dd><p><font color="#666">&nbsp;7</font> 伪装</p></dd>
+        	    			<dd><p><font color="#666">&nbsp;8</font> 一个人的城市</p></dd>
+        	    			<dd><p><font color="#666">&nbsp;9</font> I AM YOURS PT.2</p></dd>
+        	    			<dd><p><font color="#666">10</font> 你的酒馆对我打了烊</p></dd>
+        	    			<dd><a href="#">查看更多>></a></dd>
+        	    		</dl>
+        	    		
+        	    		<dl class="ph">
+        	    			<dt class="dt3">原创榜</dt>
+        	    			<dd><p><span>&nbsp;1</span> 去见你</p></dd>
+        	    			<dd><p><span>&nbsp;2</span> 无所求必满载而归</p></dd>
+        	    			<dd><p><span>&nbsp;3</span> 可最后</p></dd>
+        	    			<dd><p><font color="#666">&nbsp;4</font> 假如我</p></dd>
+        	    			<dd><p><font color="#666">&nbsp;5</font> 龋齿</p></dd>
+        	    			<dd><p><font color="#666">&nbsp;6</font> 里面（香料 Remix）</p></dd>
+        	    			<dd><p><font color="#666">&nbsp;7</font> 夜丧物语</p></dd>
+        	    			<dd><p><font color="#666">&nbsp;8</font> 如此平凡</p></dd>
+        	    			<dd><p><font color="#666">&nbsp;9</font> 像风走了八千里</p></dd>
+        	    			<dd><p><font color="#666">10</font> 宇宙假说</p></dd>
+        	    			<dd><a href="#">查看更多>></a></dd>
+        	    		</dl>
+        	    	</div>
+        	    </div>       	           	    
+        	    <!--<歌曲排行部分结束>-->
+        	    	
+        	    <!--<小众精选部分开始>-->
+        	     <div class="CM4" onmouseover="Change_CM4()" onmouseout="Change_CM40()">
+        	     	<div class="CM4_0">
+        	    		<img id="xzjx" src="img/test3_0.png" />
+            			<p>小众精选</p><a href="#">更多>></a>
+            			<hr color="#C10D0C"/>
+        	    	</div>
+        	    	
+        	    	<div class="CM2_1">
+            			<dl class="mr_song">
+            				<dt class="song_pic"><img src="img/X1.jpg"/></dt>
+            				<dd class="song_name">Silver City</dd>
+            				<dd class="song_singer">Myrne / Linying</dd>
+            			</dl>
+            			
+            			<dl class="mr_song">
+            				<dt class="song_pic"><img src="img/X2.jpg" /></dt>
+            				<dd class="song_name">野火一季</dd>
+            				<dd class="song_singer">张良成</dd>
+            			</dl>
+            			
+            			<dl class="mr_song">
+            				<dt class="song_pic"><img src="img/X3.jpg" /></dt>
+            				<dd class="song_name">Geronimo</dd>
+            				<dd class="song_singer">Sheppard</dd>
+            			</dl>
+            			
+            			<dl class="mr_song">
+            				<dt class="song_pic"><img src="img/X4.jpg" /></dt>
+            				<dd class="song_name">鲸落</dd>
+            				<dd class="song_singer">昨夜派对</dd>
+            			</dl>
+            			
+            			<dl class="mr_song">
+            				<dt class="song_pic"><img src="img/X5.jpg" /></dt>
+            				<dd class="song_name">Rendezvous</dd>
+            				<dd class="song_singer">DEVIN K</dd>
+            			</dl>
+            			
+            			<dl class="mr_song">
+            				<dt class="song_pic"><img src="img/X6.jpg" /></dt>
+            				<dd class="song_name">途中</dd>
+            				<dd class="song_singer">陈鸿宇</dd>
+            			</dl>           			
+            		</div>
+        	     </div>
+        	    <!--<小众精选部分结束>-->
+        	    <!--<歌手部分开始>-->
+        	    	<div class="CM5" onmouseover="Change_CM5()" onmouseout="Change_CM50()">
+        	    		<div class="CM2_0">
+            			<img id="gsyd" src="img/test4_0.png" />
+            			<p>歌手/乐队</p><a href="#">更多>></a>
+            			<hr color="#C10D0C"/>
+            		    </div>
+            	    
+            		    <div class="CM2_1">
+            			<dl class="mr_song">
+            				<dt class="song_pic"><img src="img/S1.jpg" /></dt>
+            				<dd class="song_singer">RADWIMPS</dd>
+            			</dl>
+            			
+            			<dl class="mr_song">
+            				<dt class="song_pic"><img src="img/S2.jpg" /></dt>
+            				<dd class="song_singer">陈奕迅</dd>
+            			</dl>
+            			
+            			<dl class="mr_song">
+            				<dt class="song_pic"><img src="img/S3.jpg" /></dt>           				
+            				<dd class="song_singer">Alan Walker</dd>
+            			</dl>
+            			
+            			<dl class="mr_song">
+            				<dt class="song_pic"><img src="img/S4.jpg" /></dt>
+            				<dd class="song_singer">Taylor Swift</dd>
+            			</dl>
+            			
+            			<dl class="mr_song">
+            				<dt class="song_pic"><img src="img/S5.jpg" /></dt>
+            				<dd class="song_singer">华晨宇</dd>
+            			</dl>
+            			
+            			<dl class="mr_song">
+            				<dt class="song_pic"><img src="img/S6.jpg" /></dt>
+            				<dd class="song_singer">李荣浩</dd>
+            			</dl>           			
+            		</div>
+        	    	</div>
+        	    <!--<歌手部分结束>-->
+        	    	
+            </div>
+        </div>
+        <!--内容部分结束-->
+        <!--<页尾部分开始>-->
+        <div class="foot">
+        	<p>关于我们 | 服务条款 | 隐私政策 | 版权声明 | 意见反馈 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copyright &copy; 2018 - 2019 Fivezeroeight. &nbsp;All Rights Reserved.</p>
+        	<p>Fivezeroeight. 版权所有 85CP备13385453</p>
+        </div>
+         <!--<页尾部分结束>-->
+	</body>
+</html>
