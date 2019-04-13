@@ -74,21 +74,25 @@ function djzc()
 function dlname_0()
 {
 	var a=document.getElementsByClassName("k1");
+	if(a[0].value=="Email")
 	a[0].value="";
 }
 function dlname_1()
 {
 	var a=document.getElementsByClassName("k1");
+	if(a[0].value=="")
 	a[0].value="Email";
 }
 function dlp_0()
 {
 	var a=document.getElementsByClassName("k1");
+	if(a[1].value=="Password")
 	a[1].value="";
 }
 function dlp_1()
 {
 	var a=document.getElementsByClassName("k1");
+	if(a[1].value=="")
 	a[1].value="Password";
 }
 //登录部分焦点变化结束
@@ -97,31 +101,37 @@ function dlp_1()
 function zcname_0()
 {
 	var a=document.getElementsByClassName("k2");
+	if(a[0].value=="Email")
 	a[0].value="";
 }
 function zcname_1()
 {
 	var a=document.getElementsByClassName("k2");
-	a[0].value="Email";
+	if(a[0].value=="")
+	 {a[0].value="Email";}
 }
 function zcp_0()
 {
 	var a=document.getElementsByClassName("k2");
+	if(a[1].value=="Password")
 	a[1].value="";
 }
 function zcp_1()
 {
 	var a=document.getElementsByClassName("k2");
+	if(a[1].value=="")
 	a[1].value="Password";
 }
 function zcpa_0()
 {
 	var a=document.getElementsByClassName("k2");
+	if(a[2].value=="Confirm Password")
 	a[2].value="";
 }
 function zcpa_1()
 {
 	var a=document.getElementsByClassName("k2");
+	if(a[2].value=="")
 	a[2].value="Confirm Password";
 }
 //注册部分焦点变化结束
@@ -130,10 +140,16 @@ function zcpa_1()
 function log_in()
 {
 	alert("登录成功！点击跳转至首页。");
-		window.open("index.html");
+		window.open("first.html","_self");
 }
 function log_start()
 {
 	alert("恭喜您注册成功！点击跳转至首页。");
-		window.open("index.html");
+		window.open("first.html","_self");
+}
+
+//前往首页
+function go_web()
+{
+	window.open("first.html","_self");	
 }
