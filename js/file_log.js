@@ -139,15 +139,29 @@ function zcpa_1()
 //登录成功
 function log_in()
 {
-	alert("登录成功！点击跳转至首页。");
-		window.open("first.html","_self");
+	var c=document.getElementsByClassName("k1");
+	if(c[0].value!="Email"&&c[1].value!="Password")
+	    {
+	    	alert("登录成功！点击跳转至首页。");
+		    window.open("first.html","_self");
+		}
+	    
+	else{
+		alert("请您输入完整信息！");
+	}
 }
 function log_start()
 {
-	alert("恭喜您注册成功！点击跳转至首页。");
-		window.open("first.html","_self");
+	var d=document.getElementsByClassName("k2");
+		if(d[0].value!="Email"&&d[1].value!="Password"&&d[2].value!="Confirm Password")
+	    {
+	    	alert("恭喜您注册成功！点击跳转至首页。");
+		    window.open("first.html","_self");
+       }
+	    else{
+	    	alert("请您输入完整信息！");
+	    }
 }
-
 //前往首页
 function go_web()
 {

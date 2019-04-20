@@ -1,35 +1,85 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
-		<meta charset="utf-8" />
-		<title>音觅-Login</title>
+		<meta charset="utf-8">
+		<title>音觅-Welcom</title>
 		<link rel="shortcut icon" href="img/ymico.ico"/>
-		<link rel="stylesheet" href="css/log_s.css" type="text/css"/>
-        <script type="text/javascript" src="js/file_log.js"></script>
+		<script src="js/jquery-3.3.1.js"></script>
+		<style type="text/css">
+			*{
+				text-decoration: none;
+			}
+			video {
+				height: auto;
+				width: auto;
+				position: fixed;
+				z-index: -100;
+				min-width: 100%;  
+                min-height: 100%; 
+			}
+			body {
+				margin: 0;
+			}
+			#wel{
+				display: none;
+				position: absolute;
+				margin: 0 auto;
+				top: 13%;
+				left: 33%;
+			  width: 478px;
+			  height: 236px;
+				background: rgba(255,255,255,0);
+				float: left;
+			}
+			#to{
+				display: none;
+				position: absolute;
+				margin: 0 auto;
+				top: 40%;
+				left: 33%;
+			  width: 478px;
+			  height: 148px;
+				float: left;
+				padding-top: 88px;
+			}
+			#to a{
+				font-size: 26px;
+				margin: 0 0 0 67px;
+				border: 3px solid rgba(255,255,255,0.5);
+				color: whitesmoke;
+				border-radius: 5px;
+				padding: 2px 10px 2px 10px;
+			}
+			p{
+				color: white;
+				font-size: 40px;
+				text-align: center;
+				font-weight: bold;
+			}
+			
+		</style>
 	</head>
+
 	<body>
-		
-			<div class="banner">
-				<img src="img/log_0.jpg"/>
-				<div class="or"><span  class="a" onclick="djdl()">登录 </span><span onclick="djzc()" class="b">注册</span>
-			    
-				<div class="dl">
-					<p class="si">Sign In</p>
-					<input type="text"  class="k1" value="Email" onfocus="dlname_0()" onblur="dlname_1()"/>
-					<input type="text"  class="k1" value="Password" onfocus="dlp_0()" onblur="dlp_1()"/>
-					<img src="img/log_1.jpg" onclick="log_in()"/>
-					<img src="img/log_4.jpg" onclick="go_web()" />
-				</div>
-				
-				<div class="zc">
-					<p class="su">Sign Up</p>
-					<input type="text"  class="k2" value="Email" onfocus="zcname_0()" onblur="zcname_1()"/>
-					<input type="text"  class="k2" value="Password" onfocus="zcp_0()" onblur="zcp_1()"/>
-					<input type="text"  class="k2" value="Confirm Password" onfocus="zcpa_0()" onblur="zcpa_1()"/>
-					<img src="img/log_2.jpg" onclick="log_start()"/>
-				</div>
-				<div class="con">
-					<p>&copy;Fivezeroeight &nbsp;YinMi-Musical Banquet</p>
-				</div>
-</body>
+		<video id="video1" muted="muted" autoplay="autoplay" loop="loop">
+			<source src="img/RADWIMPS_Trim.mp4" type="video/mp4">
+		</video>
+    <div id="wel">
+    	<p>Welcom to</p>
+    	<p>Musical Banquet!</p>
+    </div>
+    <div id="to">
+    	<a href="others/log.html">登录 注册</a>
+    	<a href="others/first.html">进入官网</a>
+    </div>
+    
+    <script>
+    	$(function(){
+    		$("#wel").fadeIn(3000);
+    		$("#to").fadeIn(4000)
+    	})
+    </script>
+	</body>
+
 </html>

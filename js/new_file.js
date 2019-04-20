@@ -1,10 +1,3 @@
-/*登陆相关部分开始*/
-//function change(myid,mode)
-//{
-//	var log=document.getElementById(myid);
-//	log.style.display=mode;
-//}
-/*登陆相关部分结束*/
 //搜索框焦点的改变开始
 function ssChange_0()
 {
@@ -146,12 +139,12 @@ change_gqphbg();
 function change_CM1p()
 {
 	var a=document.getElementById("bztj");
-	a.src="img/test0_p.png";
+	a.src="../img/test0_p.png";
 }
 function change_CM10()
 {
 	var a=document.getElementById("bztj");
-	a.src="img/test0_0.png";
+	a.src="../img/test0_0.png";
 }
 //改变本站推荐栏的图标结束
 //本站推荐内容遮盖层部分开始
@@ -192,11 +185,11 @@ function xiaoshi_2()
 //改变每日推荐栏的图标开始
 	function change_CM2p(){
 	var a=document.getElementById("mrtj");
-	a.src="img/test1_p.png";
+	a.src="../img/test1_p.png";
     }
 	function change_CM20(){
 	var a=document.getElementById("mrtj");
-	a.src="img/test1_0.png";
+	a.src="../img/test1_0.png";
     }
 //改变每日推荐栏的图标结束
 
@@ -204,12 +197,12 @@ function xiaoshi_2()
 function Change_CM3()
 {
 	var a=document.getElementById("gqph");
-	a.src="img/test2_p.png";
+	a.src="../img/test2_p.png";
 }
 function Change_CM30()
 {
 	var a=document.getElementById("gqph");
-	a.src="img/test2_0.png";
+	a.src="../img/test2_0.png";
 }
 //改变歌曲排行的图标结束
 
@@ -217,12 +210,12 @@ function Change_CM30()
 function Change_CM4()
 {
 	var a=document.getElementById("xzjx");
-	a.src="img/test3_p.png";
+	a.src="../img/test3_p.png";
 }
 function Change_CM40()
 {
 	var a=document.getElementById("xzjx");
-	a.src="img/test3_0.png";
+	a.src="../img/test3_0.png";
 }
 
 //改变小众精选的图标结束
@@ -231,12 +224,12 @@ function Change_CM40()
 function Change_CM5()
 {
 	var a=document.getElementById("gsyd");
-	a.src="img/test4_p.png";
+	a.src="../img/test4_p.png";
 }
 function Change_CM50()
 {
 	var a=document.getElementById("gsyd");
-	a.src="img/test4_0.png";
+	a.src="../img/test4_0.png";
 }
 //改变歌手的图标结束
 

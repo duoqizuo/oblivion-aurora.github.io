@@ -25,35 +25,7 @@ cursor: pointer;
 #bgd #head .right a:hover{background: none;}
  .father {color: white;}
 #head .right .user .color{color:silver;}
-/*登陆相关部分开始*/
-#father {position: absolute;}
-#user_log img{height:50px;
-margin: 10px 0 0 85px;}
-#user_log{
-	z-index:100;
-	position: relative;
-	left: 94px;
-	top: 8px;
-	width: 223px;
-	background: white;
-}
-#user_log .name,.pass{
-	padding-left:18px;
-	margin-left: 31px;
-}
-#user_log .name{background: white url(../img/pic04.png) no-repeat;}
-#user_log .pass{background: white url(../img/pic05.png) no-repeat;}
-#user_log input{font-size: 19px;margin-bottom:15px;
-border: none;
-}
-#user_log .left_1{cursor: pointer;margin: 0 8px 0 69px;background: rgba(0,0,0,0);color: darkturquoise;}
-#user_log .right_2{cursor: pointer;background: rgba(0,0,0,0);color: aquamarine;}
-#user_log{display: none;}
-/*登陆相关部分结束*/
-
 /*<!--LOGO部分结束-->*/
-
-
 /*		<!--导航部分开始-->*/
 #nav{
 	width: 100%;
